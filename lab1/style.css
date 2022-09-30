@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .header {
@@ -9,7 +9,7 @@ body {
     padding: 20px 0;
     font-size: 1.2rem;
     font-weight: bold;
-    background-image: url(images/background.jpg);
+    background-image: url(images/background.png);
     background-size: cover;
 }
 
@@ -43,14 +43,16 @@ p {
 }
 
 .footer {
-    background-color: black;
+    background-color: rgb(203, 136, 35);
     padding: 20px 0;
     color: white;
+    background-image: url(images/background.png);
+    background-size: cover;
 }
 
 .avatar {
     text-align: center;
-    height: 300px;
+    height: 250px;
     background-image: url(images/background1.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -97,4 +99,8 @@ th {
 
 td {
     border: 1px solid black;
+}
+
+main {
+    margin-bottom: 10px;
 }
