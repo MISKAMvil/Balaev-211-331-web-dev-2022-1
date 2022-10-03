@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма обратной связи</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<section class="section1">
+			<div>
+				<nav>
+					<ul>
+						<li class="li"><a href="index.html">Форма для аутентификации</a></li>
+						<li class="li"><a href="index1.html">Форма обратной связи</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<section class="section2 flex-center">
+			<fieldset class="fieldset2 input-field">
+				<h1>Форма обратной связи</h1>
+				<form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+					<input type="hidden" name="user_id" value="1">
+					<div>
+						<label for="FIO">ФИО</label>
+						<input type="text" name="FIO" placeholder="Иванов Иван Иваныч" disabled>
+					</div>
+					<div>
+						<label for="email">Электронная почта</label>
+						<input type="email" name="email" id="email" value="123@mail.ru" required>
+					</div>
+
+					<legend>Откуда вы узнали о нас?</legend>
+					<div>
+						<input type="radio" id="friends" name="drone" value="friends">
+						<label for="friends">Рассказали друзья</label>
+					</div>
+					<div>
+						<input type="radio" id="net" name="drone" value="net" checked>
+						<label for="net">Нашли в интернете</label>
+					</div>
+
+					<div>
+						<label for="category">Категория обращения</label>
+						<select name="category_id" id="category" multiple>
+							<option value="1">Жалоба</option>
+							<option value="2" selected>Предложение</option>
+						</select>
+					</div>
+					<div>
+						<input type="checkbox" name="agreement" id="agreement" value="true">
+						<label for="agreement">Согласен с обработкой персональных данных</label>
+					</div>
+					<div>
+						<input type="file" name="вложение" id="вложение">
+					</div>
+					<button type="submit">Отправить</button>
+				</form>
+			</fieldset>
+		</section>
+	</main>
+</body>
+
+</html>

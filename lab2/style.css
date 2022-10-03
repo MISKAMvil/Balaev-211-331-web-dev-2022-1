@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	background-image: url(images/background.png);
+	background-size: cover;
+}
+
+/* main {
+	min-height: 100vh;
+	width: 100%;
+} */
+
+.section1 {
+	min-height: 5vh;
+	width: 13.5rem;
+	border-radius: 5px;
+	border: 2px solid white;
+	background-color: orange;
+	margin: 1rem;
+}
+
+.li {
+	font-size: 14px;
+	list-style: none;
+}
+
+.section2 {
+	min-height: 75vh;
+	width: 100%;
+}
+
+
+.fieldset1 {
+	font-size: 20px;
+	width: 11rem;
+	height: 11.3rem;
+	background-color: orange;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+.fieldset2 {
+	font-size: 20px;
+	width: 11rem;
+	height: 31rem;
+	background-color: orange;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-field input {
+	border-radius: 5px;
+}
+
+.input {
+	width: 11rem;
+}
+
+.btn {
+	background-color: burlywood;
+	width: 100%;
+	border-radius: 5px;
+}

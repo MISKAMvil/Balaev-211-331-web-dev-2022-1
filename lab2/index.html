@@ -5,50 +5,46 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Форма обратной связи</title>
+	<title>Форма для аутентификации</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<main>
-		<h1>Форма обратной связи</h1>
-		<form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
-			<input type="hidden" name="user_id" value="1">
+		<section class="section1">
 			<div>
-				<label for="FIO">ФИО</label>
-				<input type="text" name="FIO" placeholder="Иванов Иван Иваныч" disabled>
+				<nav>
+					<ul>
+						<li class="li"><a href="index.html">Форма для аутентификации</a></li>
+						<li class="li"><a href="index1.html">Форма обратной связи</a></li>
+					</ul>
+				</nav>
 			</div>
-			<div>
-				<label for="email">Электронная почта</label>
-				<input type="email" name="email" id="email" value="123@mail.ru" required>
-			</div>
-			<fieldset>
-				<legend>Откуда вы узнали о нас?</legend>
-
-				<div>
-					<input type="radio" id="friends" name="drone" value="friends">
-					<label for="friends">Рассказали друзья</label>
-				</div>
-				<div>
-					<input type="radio" id="net" name="drone" value="net" checked>
-					<label for="net">Нашли в интернете</label>
-				</div>
+		</section>
+		<section class="section2 flex-center">
+			<fieldset class="fieldset1 input-field">
+				<form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+					<div>
+						<label for="Login">Введите логин</label>
+						<br>
+						<input class="input" type="text" name="login" placeholder="username" required>
+					</div>
+					<div>
+						<label for="password">Введите пароль</label>
+						<br>
+						<input class="input" type="text" name="password" placeholder="password" required>
+					</div>
+					<div>
+						<input type="checkbox" name="remember_me" id="remember_me" value="true">
+						<label for="remember_me">Запомнить меня</label>
+					</div>
+					<button class="btn" type="submit">Войти</button>
+				</form>
 			</fieldset>
-			<div>
-				<label for="category">Категория обращения</label>
-				<select name="category_id" id="category" multiple>
-					<option value="1">Жалоба</option>
-					<option value="2" selected>Предложение</option>
-				</select>
-			</div>
-			<div>
-				<input type="checkbox" name="agreement" id="agreement" value="true">
-				<label for="agreement">Согласен с обработкой персональных данных</label>
-			</div>
-			<div>
-				<input type="file" name="вложение" id="вложение">
-			</div>
-			<button type="submit">Отправить</button>
-		</form>
+		</section>
 	</main>
 </body>
 
