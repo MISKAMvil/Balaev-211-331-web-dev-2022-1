@@ -40,9 +40,9 @@ body {
 }
 
 .fieldset2 {
-	font-size: 20px;
-	width: 11rem;
-	height: 31rem;
+	font-size: 18px;
+	width: 17rem;
+	height: 34rem;
 	background-color: orange;
 	border-radius: 5px;
 	border: 2px solid white;
@@ -58,7 +58,11 @@ body {
 	border-radius: 5px;
 }
 
-.input {
+.input-field2 {
+	border-radius: 5px;
+}
+
+.input1 {
 	width: 11rem;
 }
 
@@ -66,4 +70,36 @@ body {
 	background-color: burlywood;
 	width: 100%;
 	border-radius: 5px;
+}
+
+/* legend {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0;
+} */
+
+h1 {
+	font-size: 24px;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.label label{
+	font-size: 15px;
+}
+
+/* .input2 {
+	width: 15rem;
+} */
+
+.border-radius-black {
+	border-radius: 5px;
+	border: 2px solid black;
 }

@@ -25,44 +25,67 @@
 			</div>
 		</section>
 		<section class="section2 flex-center">
-			<fieldset class="fieldset2 input-field">
+			<fieldset class="fieldset2">
+				<!-- <legend>Форма обратной связи</legend> -->
 				<h1>Форма обратной связи</h1>
 				<form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
-					<input type="hidden" name="user_id" value="1">
+					<!-- <input type="hidden" name="user_id" value="1"> -->
 					<div>
-						<label for="FIO">ФИО</label>
-						<input type="text" name="FIO" placeholder="Иванов Иван Иваныч" disabled>
+						<label for="fio">ФИО</label>
+						<br>
+						<input class="input-field2" type="text" id="fio" name="fio" placeholder="Иванов Иван Иваныч"
+							required>
 					</div>
 					<div>
 						<label for="email">Электронная почта</label>
-						<input type="email" name="email" id="email" value="123@mail.ru" required>
+						<br>
+						<input class="input-field2" type="email" name="email" id="email" placeholder="Введите email"
+							required>
 					</div>
 
-					<legend>Откуда вы узнали о нас?</legend>
-					<div>
-						<input type="radio" id="friends" name="drone" value="friends">
+					<!-- <h1>Откуда вы узнали о нас?</h1> -->
+					<legend>Откуда Вы узнали о нас?</legend>
+					<div class="label">
+						<input type="radio" id="friends" name="found-out-about-us" value="friends">
 						<label for="friends">Рассказали друзья</label>
 					</div>
-					<div>
-						<input type="radio" id="net" name="drone" value="net" checked>
-						<label for="net">Нашли в интернете</label>
+					<div class="label">
+						<input type="radio" id="web" name="found-out-about-us" value="web">
+						<label for="web">Нашли в интернете</label>
+					</div>
+					<div class="label">
+						<input type="radio" id="other" name="found-out-about-us" value="other" checked>
+						<label for="other">Другое</label>
 					</div>
 
 					<div>
-						<label for="category">Категория обращения</label>
-						<select name="category_id" id="category" multiple>
-							<option value="1">Жалоба</option>
-							<option value="2" selected>Предложение</option>
+						<label for="complaint-or-suggestion">Категория обращения</label>
+						<br>
+						<select class="border-radius-black" name="complaint-or-suggestion" id="complaint-or-suggestion">
+							<option value="complaint">Жалоба</option>
+							<option value="suggestion" selected>Предложение</option>
 						</select>
 					</div>
+
 					<div>
-						<input type="checkbox" name="agreement" id="agreement" value="true">
+						<label for="message">Текст сообщения</label>
+						<br>
+						<textarea class="border-radius-black" name="message" id="message" cols="20" rows="5"
+							placeholder="Введите сообщение..."></textarea>
+					</div>
+
+					<div>
+						<label>Вложение</label>
+						<input class="file" type="file" id="file" name="file" value="file">
+					</div>
+
+					<div class="label">
+						<input type="checkbox" name="accept-personal-data" id="accept-personal-data" value="true"
+							required>
 						<label for="agreement">Согласен с обработкой персональных данных</label>
 					</div>
-					<div>
-						<input type="file" name="вложение" id="вложение">
-					</div>
-					<button type="submit">Отправить</button>
+
+					<button class="btn" type="submit">Отправить</button>
 				</form>
 			</fieldset>
 		</section>
