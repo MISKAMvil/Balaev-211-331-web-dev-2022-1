@@ -14,7 +14,7 @@
 
 <body>
 	<main>
-		<section class="section1">
+		<div class="section1">
 			<div>
 				<nav>
 					<ul>
@@ -23,8 +23,8 @@
 					</ul>
 				</nav>
 			</div>
-		</section>
-		<section class="section2 flex-center">
+		</div>
+		<div class="section2 flex-center">
 			<fieldset class="fieldset2">
 				<!-- <legend>Форма обратной связи</legend> -->
 				<h1>Форма обратной связи</h1>
@@ -44,7 +44,8 @@
 					</div>
 
 					<!-- <h1>Откуда вы узнали о нас?</h1> -->
-					<legend>Откуда Вы узнали о нас?</legend>
+					<!-- <legend>Откуда Вы узнали о нас?</legend> -->
+					<h2>Откуда вы узнали о нас?</h2>
 					<div class="label">
 						<input type="radio" id="friends" name="found-out-about-us" value="friends">
 						<label for="friends">Рассказали друзья</label>
@@ -70,25 +71,26 @@
 					<div>
 						<label for="message">Текст сообщения</label>
 						<br>
-						<textarea class="border-radius-black" name="message" id="message" cols="20" rows="5"
-							placeholder="Введите сообщение..."></textarea>
+						<textarea class="border-radius-black" name="message" id="message" cols="34" rows="5"
+							placeholder="Введите сообщение..." required></textarea>
 					</div>
 
 					<div>
 						<label>Вложение</label>
-						<input class="file" type="file" id="file" name="file" value="file">
+						<br>
+						<input class="file" type="file" id="file" name="file">
 					</div>
 
 					<div class="label">
 						<input type="checkbox" name="accept-personal-data" id="accept-personal-data" value="true"
 							required>
-						<label for="agreement">Согласен с обработкой персональных данных</label>
+						<label for="accept-personal-data">Согласен с обработкой персональных данных</label>
 					</div>
 
 					<button class="btn" type="submit">Отправить</button>
 				</form>
 			</fieldset>
-		</section>
+		</div>
 	</main>
 </body>
 
