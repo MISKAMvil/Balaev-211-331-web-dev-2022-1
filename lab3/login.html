@@ -14,7 +14,7 @@
 
 
 <body>
-	<header id="scroll-to-top-btn" class="header">
+	<header id="scroll-to-top-btn" class="header text-shadow">
 		<div class="container d-flex">
 			<nav class="main-menu">
 				<ul>
@@ -30,8 +30,30 @@
 			</div>
 		</div>
 	</header>
-
-	<footer class="footer">
+	<main>
+		<div class="section2 flex-center text-shadow">
+			<fieldset class="fieldset1 input-field">
+				<form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+					<div>
+						<label for="login">Введите логин</label>
+						<br>
+						<input class="input1" type="text" id="login" name="login" placeholder="username" required>
+					</div>
+					<div>
+						<label for="password">Введите пароль</label>
+						<br>
+						<input class="input1" type="text" id="password" name="password" placeholder="password" required>
+					</div>
+					<div>
+						<input type="checkbox" name="remember_me" id="remember_me" value="true">
+						<label for="remember_me">Запомнить меня</label>
+					</div>
+					<button class="btn1" type="submit">Войти</button>
+				</form>
+			</fieldset>
+		</div>
+	</main>
+	<footer class="footer text-shadow">
 		<div class="container">
 			&copy; Балаев М.И
 		</div>
