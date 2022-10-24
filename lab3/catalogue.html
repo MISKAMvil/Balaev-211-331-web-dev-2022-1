@@ -12,14 +12,14 @@
 	<link rel="icon" href="images/icon.ico" type="image/x-icon">
 </head>
 
-<body>
-	<header id="scroll-to-top-btn" class="header text-shadow">
+<body id="scroll-to-top-btn">
+	<header class="header text-shadow">
 		<div class="container d-flex">
 			<nav class="main-menu">
 				<ul>
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="catalogue.html">Каталог</a></li>
-					<li><a href="promotions.html">Акции</a></li>
+					<!-- <li><a href="promotions.html">Акции</a></li> -->
 					<li><a href="stores.html">Магазины</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
@@ -33,57 +33,141 @@
 	<main class="container d-flex">
 		<aside class="sidebar">
 			<form>
+				<!-- <h1 class="product-category-header">Фильтры</h1> -->
 				<fieldset>
-					<legend>Производители</legend>
+					<legend>Какой у Вас питомец</legend>
 					<div>
-						<input type="checkbox" value="manufactuer1" name="manufactuer" id="manufactuer1">
-						<label for="manufactuer1">Производитель 1</label>
+						<input type="radio" value="pet-group1" name="pet-group" id="pet-group1">
+						<label for="pet-group1">Собаки</label>
 					</div>
 					<div>
-						<input type="checkbox" value="manufactuer2" name="manufactuer" id="manufactuer2">
-						<label for="manufactuer2">Производитель 2</label>
+						<input type="radio" value="pet-group2" name="pet-group" id="pet-group2">
+						<label for="pet-group2">Кошки</label>
 					</div>
 					<div>
-						<input type="checkbox" value="manufactuer3" name="manufactuer" id="manufactuer3">
-						<label for="manufactuer3">Производитель 3</label>
+						<input type="radio" value="pet-group3" name="pet-group" id="pet-group3">
+						<label for="pet-group3">Рыбы и рептилии</label>
 					</div>
 					<div>
-						<input type="checkbox" value="manufactuer3" name="manufactuer" id="manufactuer4">
-						<label for="manufactuer4">Производитель 4</label>
+						<input type="radio" value="pet-group4" name="pet-group" id="pet-group4">
+						<label for="pet-group4">Птицы</label>
 					</div>
 					<div>
-						<input type="checkbox" value="manufactuer4" name="manufactuer" id="manufactuer5">
-						<label for="manufactuer5">Производитель 5</label>
+						<input type="radio" value="pet-group5" name="pet-group" id="pet-group5">
+						<label for="pet-group5">Грызуны</label>
 					</div>
 				</fieldset>
 				<fieldset>
-					<legend>Группы товаров</legend>
+					<legend>Категория товара</legend>
 					<div>
 						<input type="radio" value="group1" name="group" id="group1">
-						<label for="group1">Группа 1</label>
+						<label for="group1">Сухие корма</label>
 					</div>
 					<div>
 						<input type="radio" value="group2" name="group" id="group2">
-						<label for="group2">Группа 2</label>
+						<label for="group2">Лечебные корма</label>
 					</div>
 					<div>
 						<input type="radio" value="group3" name="group" id="group3">
-						<label for="group3">Группа 3</label>
+						<label for="group3">Наполнители</label>
 					</div>
 					<div>
 						<input type="radio" value="group4" name="group" id="group4">
-						<label for="group4">Группа 4</label>
+						<label for="group4">Средства от блох и клещей</label>
 					</div>
 					<div>
 						<input type="radio" value="group5" name="group" id="group5">
-						<label for="group5">Группа 5</label>
+						<label for="group5">Автокормушки, автопоилки и миски</label>
+					</div>
+					<div>
+						<input type="radio" value="group6" name="group" id="group6">
+						<label for="group6">Адресники, жетоны, брелки</label>
+					</div>
+					<div>
+						<input type="radio" value="group7" name="group" id="group7">
+						<label for="group7">Ветаптека</label>
+					</div>
+					<div>
+						<input type="radio" value="group8" name="group" id="group8">
+						<label for="group8">Витамины и добавки</label>
+					</div>
+					<div>
+						<input type="radio" value="group9" name="group" id="group9">
+						<label for="group9">Игрушки и мячи</label>
+					</div>
+					<div>
+						<input type="radio" value="group10" name="group" id="group10">
+						<label for="group10">Клетки, вольеры</label>
+					</div>
+					<div>
+						<input type="radio" value="group11" name="group" id="group11">
+						<label for="group11">Антицарапки и когтеточки</label>
+					</div>
+					<div>
+						<input type="radio" value="group12" name="group" id="group12">
+						<label for="group12">Лежаки, домики, матрасы</label>
+					</div>
+					<div>
+						<input type="radio" value="group13" name="group" id="group13">
+						<label for="group13">Переноски</label>
+					</div>
+					<div>
+						<input type="radio" value="group14" name="group" id="group14">
+						<label for="group14">Туалеты и совочки</label>
+					</div>
+					<div>
+						<input type="radio" value="group15" name="group" id="group15">
+						<label for="group15">Одежда</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Производитель</legend>
+					<div>
+						<input type="checkbox" value="manufactuer1" name="manufactuer" id="manufactuer1">
+						<label for="manufactuer1">Royal Canin</label>
+					</div>
+					<div>
+						<input type="checkbox" value="manufactuer2" name="manufactuer" id="manufactuer2">
+						<label for="manufactuer2">Trixie</label>
+					</div>
+					<div>
+						<input type="checkbox" value="manufactuer3" name="manufactuer" id="manufactuer3">
+						<label for="manufactuer3">Grandorf</label>
+					</div>
+					<div>
+						<input type="checkbox" value="manufactuer4" name="manufactuer" id="manufactuer4">
+						<label for="manufactuer4">Monge Natural Superpremium</label>
+					</div>
+					<div>
+						<input type="checkbox" value="manufactuer5" name="manufactuer" id="manufactuer5">
+						<label for="manufactuer5">Primordial</label>
+					</div>
+					<div>
+						<input type="checkbox" value="manufactuer6" name="manufactuer" id="manufactuer6">
+						<label for="manufactuer6">Petstages Orka</label>
+					</div>
+					<div>
+						<input type="checkbox" value="manufactuer7" name="manufactuer" id="manufactuer7">
+						<label for="manufactuer7">СелаФорт</label>
+					</div>
+					<div>
+						<input type="checkbox" value="manufactuer8" name="manufactuer" id="manufactuer8">
+						<label for="manufactuer8">"Вектор" (Polidex)</label>
+					</div>
+					<div>
+						<input type="checkbox" value="manufactuer9" name="manufactuer" id="manufactuer9">
+						<label for="manufactuer9">GiGwi</label>
+					</div>
+					<div>
+						<input type="checkbox" value="manufactuer10" name="manufactuer" id="manufactuer10">
+						<label for="manufactuer10">Feliway</label>
 					</div>
 				</fieldset>
 				<button class="submit" type="submit">Применить</button>
 			</form>
 		</aside>
 		<div class="page-content">
-			<h1 class="product-category-header">Товары для дома</h1>
+			<h1 class="product-category-header">Популярное</h1>
 
 			<div class="products-list">
 				<div class="product-card">
@@ -92,15 +176,18 @@
 					</div>
 
 					<div class="product-details">
-						<header>Чайник</header>
+						<header>Сухой корм Royal Canin Indoor 27</header>
 
-						<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut labore
-							dolore officia illum consectetur? Modi voluptatem laudantium repudiandae similique nam
-							ducimus aliquam, dolorum, enim quod at illo blanditiis aperiam.</p>
+						<p class="information">Сухой корм Royal Canin Indoor 27 для взрослых кошек живущих дома (4кг).
+							<br>
+							Полнорационный сухой корм для кошек от 1 до 7 лет, живущих в помещении.
+							<br>
+							Рекомендации по кормлению: см. упаковку.
+						</p>
 
 						<div class="control">
 							<button class="btn">
-								<span class="price">1000 &#8381;</span><span class="buy">Заказать</span>
+								<span class="price">3444 &#8381;</span><span class="buy">Заказать</span>
 							</button>
 						</div>
 					</div>
@@ -112,15 +199,17 @@
 					</div>
 
 					<div class="product-details">
-						<header>Стул</header>
+						<header>Сухой корм Royal Canin Gastrointestinal Low Fat</header>
 
-						<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut labore
-							dolore officia illum consectetur? Modi voluptatem laudantium repudiandae similique nam
-							ducimus aliquam, dolorum, enim quod at illo blanditiis aperiam.</p>
+						<p class="information">Сухой корм Royal Canin Gastrointestinal Low Fat для собак при
+							заболеваниях ЖКТ с пониженным содержанием жиров (1,5 кг).
+							<br>
+							Рекомендуется при нарушениях пищеварения и экзокринной недостаточности поджелудочной железы.
+						</p>
 
 						<div class="control">
 							<button class="btn">
-								<span class="price">1000 &#8381;</span><span class="buy">Заказать</span>
+								<span class="price">1564 &#8381;</span><span class="buy">Заказать</span>
 							</button>
 						</div>
 					</div>
@@ -132,15 +221,16 @@
 					</div>
 
 					<div class="product-details">
-						<header>Стол</header>
+						<header>Барс – спрей для собак против клещей, блох, вшей и власоедов</header>
 
-						<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut labore
-							dolore officia illum consectetur? Modi voluptatem laudantium repudiandae similique nam
-							ducimus aliquam, dolorum, enim quod at illo blanditiis aperiam.</p>
+						<p class="information">Спрей «Барс» эффективен против блох, вшей, волосовиков,
+							иксодовых и саркоптоидных клещей. Препарат обладает системным и
+							контактным действием, вызывая гибель паразитов. Спрей имеет приятный запах и оказывает
+							репеллентное действие.</p>
 
 						<div class="control">
 							<button class="btn">
-								<span class="price">1000 &#8381;</span><span class="buy">Заказать</span>
+								<span class="price">377 &#8381;</span><span class="buy">Заказать</span>
 							</button>
 						</div>
 					</div>
@@ -152,15 +242,21 @@
 					</div>
 
 					<div class="product-details">
-						<header>Фикус</header>
+						<header>Чистые лапки – наполнитель древесный для туалета кошек</header>
 
-						<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut labore
-							dolore officia illum consectetur? Modi voluptatem laudantium repudiandae similique nam
-							ducimus aliquam, dolorum, enim quod at illo blanditiis aperiam.</p>
+						<p class="information">
+							Впитывающий наполнитель для кошачьего туалета на основе древесины.
+							<br>
+							Изготовлен по технологии из экологически чистой сосны.
+							<br>
+							Использованный наполнитель можно выбрасывать в канализацию.
+							<br>
+							Объем: 37л = 13,5кг.
+						</p>
 
 						<div class="control">
 							<button class="btn">
-								<span class="price">1000 &#8381;</span><span class="buy">Заказать</span>
+								<span class="price">564 &#8381;</span><span class="buy">Заказать</span>
 							</button>
 						</div>
 					</div>
@@ -172,15 +268,20 @@
 					</div>
 
 					<div class="product-details">
-						<header>Чайный сервис</header>
+						<header>Добавка в корм Beaphar Vinka для птиц</header>
 
-						<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut labore
-							dolore officia illum consectetur? Modi voluptatem laudantium repudiandae similique nam
-							ducimus aliquam, dolorum, enim quod at illo blanditiis aperiam.</p>
+						<p class="information">Препарат, разработанный с целью повышения сопротивляемости
+							организма клеточных и вольерных птиц, способствует быстрой и полной
+							линьке.
+							<br>
+							Благодаря соотношению жизненно важных витаминов птицы становятся сильнее, здоровее.
+							<br>
+							Объем: 50мл.
+						</p>
 
 						<div class="control">
 							<button class="btn">
-								<span class="price">1000 &#8381;</span><span class="buy">Заказать</span>
+								<span class="price">893 &#8381;</span><span class="buy">Заказать</span>
 							</button>
 						</div>
 					</div>
@@ -192,15 +293,25 @@
 					</div>
 
 					<div class="product-details">
-						<header>Подсвечник</header>
+						<header>Пластиковая переноска для грызунов Trixie Pico</header>
 
-						<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut labore
-							dolore officia illum consectetur? Modi voluptatem laudantium repudiandae similique nam
-							ducimus aliquam, dolorum, enim quod at illo blanditiis aperiam.</p>
+						<p class="information">Переноска для грызунов Trixie Pico 23 х 18 х 16 см.
+							<br>
+							Ключевые особенности:
+							<br>
+							&#8226; открывается сверху;
+							<br>
+							&#8226; специальные прорези для оптимальной циркуляции воздуха;
+							<br>
+							&#8226; 2 ручки для переноски.
+						</p>
+						<p>
+
+						</p>
 
 						<div class="control">
 							<button class="btn">
-								<span class="price">1000 &#8381;</span><span class="buy">Заказать</span>
+								<span class="price">629 &#8381;</span><span class="buy">Заказать</span>
 							</button>
 						</div>
 					</div>
@@ -212,15 +323,16 @@
 					</div>
 
 					<div class="product-details">
-						<header>Ваза</header>
+						<header>Автокормушка Homefish 101 для аквариумных рыб</header>
 
-						<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut labore
-							dolore officia illum consectetur? Modi voluptatem laudantium repudiandae similique nam
-							ducimus aliquam, dolorum, enim quod at illo blanditiis aperiam.</p>
+						<p class="information">Автоматическая кормушка для рыб.
+
+							Информация о составе и ингредиентах, цветовом решении, технических и иных характеристиках,
+							стране-изготовителе, внешнем виде и комплекте поставки товара носит справочный характер.</p>
 
 						<div class="control">
 							<button class="btn">
-								<span class="price">1000 &#8381;</span><span class="buy">Заказать</span>
+								<span class="price">1943 &#8381;</span><span class="buy">Заказать</span>
 							</button>
 						</div>
 					</div>
@@ -232,15 +344,20 @@
 					</div>
 
 					<div class="product-details">
-						<header>Варочная панель</header>
+						<header>TRIOL 3821 игрушка для кошек «Мячик»</header>
 
-						<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut labore
-							dolore officia illum consectetur? Modi voluptatem laudantium repudiandae similique nam
-							ducimus aliquam, dolorum, enim quod at illo blanditiis aperiam.</p>
+						<p class="information">Яркая и веселая игрушка для Вашего питомца.
+							<br>
+							Изготовлен из качественных и безопасных материалов.
+							<br>
+							Мячик Triol обязательно придется по вкусу Вашему питомцу.
+							<br>
+							Подарите своей кошке веселое и энергичное времяпрепровождение.
+						</p>
 
 						<div class="control">
 							<button class="btn">
-								<span class="price">1000 &#8381;</span><span class="buy">Заказать</span>
+								<span class="price">38 &#8381;</span><span class="buy">Заказать</span>
 							</button>
 						</div>
 					</div>
@@ -252,26 +369,31 @@
 					</div>
 
 					<div class="product-details">
-						<header>Букет</header>
+						<header>OSSO FASHION водолазка для кошек Cats</header>
 
-						<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut labore
-							dolore officia illum consectetur? Modi voluptatem laudantium repudiandae similique nam
-							ducimus aliquam, dolorum, enim quod at illo blanditiis aperiam.</p>
+						<p class="information">Мягкая, уютная и стильная водолазка для кошек.
+							<br>
+							Водолазка предназначена для короткошерстных кошек и кошек породы сфинкс.
+							<br>
+							Удобная и практичная водолазка подарит Вашему питомцу тепло и уют в холодную погоду, спасет
+							от сквозняка.
+						</p>
 
 						<div class="control">
 							<button class="btn">
-								<span class="price">1000 &#8381;</span><span class="buy">Заказать</span>
+								<span class="price">518 &#8381;</span><span class="buy">Заказать</span>
 							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<button class="scroll-to-top-btn">
-			<a href="#scroll-to-top-btn"></a>
-			&#9650;
-		</button>
+		<div class="btn-color">
+			<!-- <a href="#scroll-to-top-btn"> -->
+			<!-- <button class="scroll-to-top-btn">&#9650;</button> -->
+			<!-- </a> -->
+			<a href="#scroll-to-top-btn" class="scroll-to-top-btn">&#9650;</a>
+		</div>
 	</main>
 
 	<footer class="footer text-shadow">
