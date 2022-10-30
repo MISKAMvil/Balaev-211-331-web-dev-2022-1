@@ -1,7 +1,7 @@
 "use strict";
 
 function pow(x, n) {
-	if ((x >= 1) && (x % 1 == 0)) {
+	if ((n >= 1) && (n % 1 == 0)) {
 		let number = x;
 		if (n == 1) {
 			alert(x);
@@ -14,7 +14,7 @@ function pow(x, n) {
 		}
 	}
 	else {
-		alert('Число ' + x + ' не является натуральным.')
+		alert('Число ' + n + ' не является натуральным.')
 	}
 }
 
