@@ -26,7 +26,7 @@ function clickHandler(event) {
 		return;
 	}
 
-	event.target.innerHTML = turn == 0 ? 'X' : 'O';
+	event.target.innerHTML = turn == 0 ? '✕' : '◯';
 	turn = (turn + 1) % 2;
 
 	let winner = findWinner();
