@@ -59,10 +59,10 @@ function tokenize(str) {
                 tokens.push(lastNumber);
                 lastNumber = '';
             }
-        } 
+        }
         if (isOperation(char) || char == '(' || char == ')') {
             tokens.push(char);
-        } 
+        }
     }
     if (lastNumber.length > 0) {
         tokens.push(lastNumber);
@@ -97,9 +97,9 @@ function compile(str) {
         if (isNumeric(token)) {
             out.push(token);
         } else if (isOperation(token)) {
-            while (stack.length > 0 && 
-                   isOperation(stack[stack.length - 1]) && 
-                   priority(stack[stack.length - 1]) >= priority(token)) {
+            while (stack.length > 0 &&
+                isOperation(stack[stack.length - 1]) &&
+                priority(stack[stack.length - 1]) >= priority(token)) {
                 out.push(stack.pop());
             }
             stack.push(token);
