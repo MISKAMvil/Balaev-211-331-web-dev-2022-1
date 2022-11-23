@@ -16,6 +16,7 @@ let turn = 0;
 let gameOver = false;
 
 function clickHandler(event) {
+
 	if (gameOver) {
 		showMessage('Игра закончена', 'danger');
 		return;
@@ -34,7 +35,6 @@ function clickHandler(event) {
 		showMessage(winner ? `${winner} одержал победу!` : 'Ничья');
 		gameOver = true;
 	}
-
 }
 
 function newGame() {
@@ -95,7 +95,7 @@ function showMessage(msg, category = 'success') {
 	createDiv.classList.add('msg', category);
 	createDiv.innerHTML = msg;
 	messages.append(createDiv);
-	setTimeout(() => createDiv.remove(), 2000);
+	setTimeout(() => createDiv.remove(), 1000);
 }
 
 
