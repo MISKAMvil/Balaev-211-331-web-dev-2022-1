@@ -20,38 +20,35 @@
         </div>
     </header>
     <main>
-        <div class="calc-container">
-            <div class="screen">
-                <span></span>
+        <div class="calc-container calc">
+            <div class="screen display">
+                <form name="form">
+                    <input type="text" name="textview" readonly id="screen">
+                </form>
             </div>
-            <div id="calc">
-                <div class="display">
-                    тут будет вывод результатов
+            <div class="buttons">
+                <div class="digits key-style">
+                    <button class="key digit">7</button>
+                    <button class="key digit">8</button>
+                    <button class="key digit">9</button>
+                    <button class="key digit">4</button>
+                    <button class="key digit">5</button>
+                    <button class="key digit">6</button>
+                    <button class="key digit">1</button>
+                    <button class="key digit">2</button>
+                    <button class="key digit">3</button>
+                    <button class="key digit">0</button>
+                    <button class="key digit">.</button>
                 </div>
-                <div class="buttons">
-                    <div class="digits">
-                        <button class="key-digit">7</button>
-                        <button class="key-digit">8</button>
-                        <button class="key-digit">9</button>
-                        <button class="key-digit">4</button>
-                        <button class="key-digit">5</button>
-                        <button class="key-digit">6</button>
-                        <button class="key-digit">1</button>
-                        <button class="key-digit">2</button>
-                        <button class="key-digit">3</button>
-                        <button class="key-digit">0</button>
-                        <button class="key-digit">.</button>
-                    </div>
-                    <div class="other">
-                        <button class="key-operation">+</button>
-                        <button class="key-operation">-</button>
-                        <button class="key-operation">*</button>
-                        <button class="key-operation">/</button>
-                        <button class="key-bracket">(</button>
-                        <button class="key-bracket">)</button>
-                        <button class="key-result">=</button>
-                        <button class="key-clear">C</button>
-                    </div>
+                <div class="other key-style">
+                    <button class="key operation">+</button>
+                    <button class="key operation">-</button>
+                    <button class="key operation">*</button>
+                    <button class="key operation">/</button>
+                    <button class="key bracket">(</button>
+                    <button class="key bracket">)</button>
+                    <button class="key result">=</button>
+                    <button class="key clear">C</button>
                 </div>
             </div>
         </div>
