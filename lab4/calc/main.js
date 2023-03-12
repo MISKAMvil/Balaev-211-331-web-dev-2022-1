@@ -99,25 +99,27 @@ function compile(str) {
 
 //наработки по eval
 function evaluate(str) {
-    const operators = {
-        '+': (x, y) => x + y,
-        '-': (x, y) => x - y,
-        '*': (x, y) => x * y,
-        '/': (x, y) => x / y
-    };
 
-    let stack = [];
-
-    compile(str).split(' ').forEach((token) => {
-        if (token in operators) {
-            let [y, x] = [stack.pop(), stack.pop()];
-            stack.push(operators[token](x, y));
+    let strings = compile(str).split(' ');
+    let res = [];
+    for (char of strings) {
+        if (isDigit(char) || isNumeric(char)) {
+            res.push(parseFloat(char));
         } else {
-            stack.push(parseFloat(token));
+            let num1 = res.pop();
+            let num2 = res.pop();
+            if (char == '+') {
+                res.push(num1 + num2).toFixed(2);
+            } else if (char == '-') {
+                res.push(num2 - num1).toFixed(2);
+            } else if (char == '*') {
+                res.push(num1 * num2).toFixed(2);
+            } else if (char == '/') {
+                res.push(num2 / num1).toFixed(2);
+            }
         }
-    });
-
-    return stack.pop();
+    }
+    return res.pop().toFixed(2);
 }
 
 // Функция clickHandler предназначена для обработки 
@@ -136,19 +138,22 @@ function evaluate(str) {
 
 //наработки по clickhandler
 function clickHandler(event) {
-    scr.value = scr.value + event.target.textContent
-    if (event.target.textContent == '=') {
-        scr.value = evaluate(scr.value)
-    }
-    if (event.target.textContent == 'C') {
-        scr.value = ''
+    if ((event.target.className == "digits") ||
+        (event.target.className == "other")) return;
+
+    let mes = document.querySelector(".mes");
+
+    if (event.target.className == "key clear") {
+        mes.innerHTML = null;
+    } else if (event.target.className == "key result") {
+        mes.innerHTML = evaluate(mes.innerHTML);
+    } else {
+        mes.innerHTML += event.target.innerHTML;
     }
 }
 
 // Назначьте нужные обработчики событий.
-//наработки
 window.onload = function () {
-    buttons.forEach(target => target.addEventListener('click', clickHandler))
-}
-var buttons = document.querySelectorAll('.key')
-var scr = document.querySelector('#screen')
+    let buttons = document.querySelector(".buttons");
+    buttons.onclick = clickHandler;
+};
